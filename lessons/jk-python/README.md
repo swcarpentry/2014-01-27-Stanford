@@ -1,5 +1,8 @@
-Scientific Python Basics
-========================
+---
+layout: lesson
+root: ../..
+title: Scientific Python Basics
+---
 
 Goals
 -----
