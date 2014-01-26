@@ -84,7 +84,7 @@ troupe, so the name really doesn't have much to do with snakes.
 
 ### Python is open source and free (as in "free beer" and as in "free speech").
 
-## Inception: "we need to go deeper"
+## Inception:
 
 ![We need to go deeper](goodgood-but-we-must-go-deeper.jpg)
 
@@ -98,7 +98,7 @@ Let's start by writing our first python program. Open a text editor and type:
 Save the file as "hello.py". Then navigate the shell to where you save the
 program and type:
 
-   $ python hello.py
+    $ python hello.py
 
 We have managed to take control of the machine! 
    
@@ -142,25 +142,29 @@ We can assign values to variables and query the interactive namespace:
 
 And even operate on these variables:
 
-    In [5] a + 1
-    Out [5] 2
+    In [5]: a + 1
+    Out [5]: 2
 
 Python has many built-in functions, to operate on variables that you create:
 
-   In[6] my_string = "abc"
-   In[7] len(my_string)
+    In[6]: my_string = "abc"
+    In[7]: len(my_string)
  
 IPython allows us to get help about these functions. Try typing:
 
-   In[8] len? 
+    In[8]: len? 
 
 IPython implements a set of 'magic' functions. For example:
 
-   In [6]: %time a = 1
+    In [6]: %time a = 1
 
 This is not "standard" Python, but is an extension of the language to add
 convenience and functionality.
-   
+
+You can learn much more about the IPython magics by using the `%magic` magic:
+
+    In [7]: %magic
+
 This is all very nice - we are really feeling at home right here inside of our
 computer's psyche, but what if you wanted to save a session and share it?
 Or use a python session as the basis for a lesson? Or for a publication?
