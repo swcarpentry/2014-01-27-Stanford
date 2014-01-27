@@ -177,6 +177,8 @@ sending neatly-encoded instructions to the computer, to remember stuff for us
 (variables), or to operate on that stuff.
 
 To start the notebook, please change your working directory to
-`2013-09-16-ISI/lessons/python` directory and type `ipython notebook` from the
+`2014-01-27-Stanford/lessons/python` directory and type `ipython notebook` from the
 commandline.  This will start the ipython notebook server and open a web
 browser showing the ipython notebook dashboard.
+
+[1]: http://software-carpentry.org/blog/2012/08/applying-pedagogical-principles-in-this-course.html
