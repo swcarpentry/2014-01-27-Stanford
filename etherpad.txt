@@ -1,0 +1,371 @@
+Software Carpentry at Stanford, January 27th-28th, 2014
+
+Welcome to our etherpad! 
+
+Please enter your name on the top left of the page (where it says <enter your name>)
+
+You can write things (notes, questions) in this text-box. You can also use the chat box on the bottom right to communicate with instructors, helpers, and other participants. Try it out! 
+
+
+Introduction
+
+- Why are we here? 
+- How this is going to work: 
+    - Interactive - hands on keyboards
+    - Team up!
+    - Helpers
+    - Sticky notes
+- Etherpad
+- Survey results + follow-up:
+    - Tell us a little bit about yourself (Name, research topic, software you use for your research). 
+
+---
+
+Ariel, Brains/Vision, Python python python (Matlab)
+Justin, Ecology, Python (ex Matlab and R)
+Albert, solid oxide fuel cells, Matlab
+Christoph, Quantum Physics, Matlab 
+Yvonne, computational condensed matter physics (fortran)
+Karen, Brains/Vision, R and Matlab
+Kunal, Solar energy conversion (Experiment). LabVIEW and MATLAB. 
+Jared, Solar research/Experimental, MATLAB for analysis, LabVIEW for data acquisition
+Menyoung , condensed matter/low-temp expt, C, Matlab, Igor
+Angie, materials science/physics, Matlab, Labview
+John, GaAs Quantum Hall Bilayers, some C++, some MATLAB, some Igor
+Alex, Scanning Gate Microscopy, C++/Python/Matlab in equal parts
+Rosemary, Vision and brains, Matlab
+Georgi, Surface science and materials chemistry, Matlab
+Alex, Hearing, MATLAB, R
+Yonas, condensed matter experiment, Matlab
+Patricia, Geospatial Analysis, Python
+Max, Experimental Condensed Matter Physics, R, MATLAB, Origin Lab
+Derrick, condensed matter experiment, MATLAB
+Eli, Topological Insulators, Matlab, Igor
+Nora, condensed matter physics, matlab
+Lucas, experimental condensed matter physics, Igor / Matlab
+Fatma, Brains/Vision/Language, python/matlab
+Riccardo - materials science/ optics, Matlab
+Shenglan, Physics. We use matlab, python a lot.
+Laima Excel
+Stathis, Solar Physics, IDL, Fortran
+Scott, materials science, LabView
+
+
+---
+
+For people interested in scraping data from the web: http://www.crummy.com/software/BeautifulSoup/
+
+---
+
+Practice regular expressions: 
+http://regexpal.com/
+
+ http://ndpsoftware.com/git-cheatsheet.html
+
+---
+
+To visually see your branches in your own repository, run the global configuration command
+
+git config --global alias.lg "log --oneline --graph --decorate --all"
+
+then try the command "git lg"
+
+This gives you an easily accessible version of "git log" with some additional flags.
+
+
+
+
+
+---
+
+In response to the question about how Ariel made his slides: 
+
+The slides are an ipython notebook (!), converted using nbconvert, which is a part of ipython (http://ipython.org/ipython-doc/rel-1.0.0/interactive/nbconvert.html)
+
+It relies on the reveal.js javascript library:
+
+http://lab.hakim.se/reveal-js/
+
+---
+
+On git merging conflicting files, what in particular don't you like? (Maybe it can be modified.) 
+
+In general, git will automatically merge when there are no conflicts, which it believes to be the case when you haven't specifically modified a file in two branches in a conflicting way since the point at which the branches diverged (i.e., if you make a change to a part of a file in either branch since the last divergence, git will try to retain these changes).
+
+Would you want it to behave differently?
+
+---
+
+A useful development workflow for git is below (JK uses this basic pattern for his software work) -
+
+http://nvie.com/posts/a-successful-git-branching-model/
+
+If anyone's interested in removing master, and workflows that involve that, have a look at the AstroPy documentation
+
+http://docs.astropy.org/en/stable/development/workflow/index.html
+
+Have a look at the links under "Workflow" at the bottom.
+
+
+Type your github user name: 
+---------------------------------------
+yfkung
+jarsch
+maxshaps
+kohstall
+yyemane
+angiecl
+dsbjr
+peeterslucas
+johnbartel
+rosemary-le
+menyoung
+elifox
+nbrackbill
+fengzhuoluo
+scharr
+kunalsahasrabuddhe
+shenglan0407
+rbassiri
+scr9035
+cedar10b
+patriciacb
+
+---
+
+Git via SSH: 
+http://book.git-scm.com/4_setting_up_a_private_repository.html
+
+https://github.com/swcarpentry/2014-01-27-Stanford
+
+Run the command below to clone our bootcamp repo into your present working directory
+
+git clone https://github.com/swcarpentry/2014-01-27-Stanford.git
+
+---
+
+To add Canopy to PATH on a Mac, add this to bash_profile
+
+PATH=/Users/jkitzes/Library/Enthought/Canopy_64bit/User/bin:$PATH; export PATH 
+
+but using your username
+
+---
+
+If you are feeling really loopy about it: 
+http://stackoverflow.com/questions/2553354/how-to-get-a-variable-name-as-a-string-in-python
+
+---
+
+For tomorrow:
+Stats+1
+Image processing+1+1+1+1
+Matlab / Python workflow (legacy Matlab code)+1
+Data capture+1
+File I/O, data reading/writing+1+1+1+1+1+1+1 (with metadata?)+1+1+1
+Functions, especially with optional input arguments+1
+writing code in python that collects data and then pushes data to/interfaces with matlab
+Publication-quality plots. How to export. Allowed fonts. Etc.+1+round(1.2)+1
+Pandas+1
+General principles in python, contrasted to MATLAB. For instance, vectorization: are for loops better in numpy?
+Guide to resources: what is easy to look up online so we can spend time on things that aren't?+1+1
+how to visualize data in a movie+1
+Executables+1
+GUIs+1+1+1+1+1+1
+Manipulating arrays of data+1+1+1
+Python vs. other programing languages such as Matlab and C ?  Pros and cons.  +1
+Parallel processing
+
+How do you keep your "lab notebook"? Integration with git, python, etc.?
+
+PLEASE TELL US WHAT YOU THINK!!
+Basic, thorough introduction. pls recommend good books to continue learning at conclusion of workshop+1+1+1+1+1 +1
+Great introduction to Python - python session was easier to follow that git session+1+1+1+1+1+1
+
+Definitely feel more comfortable using both Git and Python now!+1+1+1
+
+Learned a lot about using iPython
+Not a fan of the notebook; intro was basic, maybe a bit too much so+1+1 re: notebook, but mostly because it's got too much text, hard to follow actual code at teaching speed if we're also trying things at the same time.+1 notebook ok for teaching tool, but prefer writing code in a file and executing it
+Learnt a ton!
+
+The introduction to git was very useful, maybe do that a bit more slow-paced
+and the Python introduction a bit faster.
+
+the end of the git where we were just watching you do stuff on github was not super helpful- wouldve been better to figure out on our own or try it out ourselves+1 sort of. A little more time to mess around with repos would be helpful. Shared repo for the class is a great idea!+1 In git, stay true to the slides a bit more. That way if we are messing around, catching back up is easier.Ya, I think one of the problems with the slides was it was hard to go back to find commands if we forgot them, and then it was also hard to catch up again
+
+
+----
+Matlab - to - python auto-translation:
+http://ompc.juricap.com/
+----
+
+Repo to clone:
+https://github.com/swcarpentry/2014-01-27-Stanford
+
+
+Resources for future learning
+
+Overall philosophy/what to focus on now vs. look up later - In general, I (JK) find that the worst part about computing are the "unknown unknowns", that is things that you don't know that you don't know. Things that you do know you don't know are easy by comparison - you just Google these when you have a minute. To deal with "unknown unknowns", your best bets are probably to (a) find collaborators who know more than you and try to shadow them as much as possible, and (b) occasionally skim through textbooks to make sure you've heard of everything that they cover.
+
+Shell: Honestly, I (JK) would probably recommend sticking with what we covered yesterday, reviewing the longer shell tutorial linked from that lesson if you're interested, and then adding knowledge as you need it. If you did want a comprehensive reference/textbook for *NIX, there are many textbooks to choose from.
+
+Git: The book Pro Git, which is online and free, is definitely the place to go next
+http://git-scm.com/book
+Chapters 1-5 are probably things that you'll want to look into now, while the remaining chapters are things that you can pick up as needed later on. Many of the more "advanced" operations (cherry-pick, rebase) only really come up when you're working with large teams on large projects.
+
+Python: I've (JK) recommended this book before, although I haven't used it in great depth myself. It's really for beginners, but might provide a brush up for those of you who don't code much.
+http://interactivepython.org/runestone/static/thinkcspy/toc.html
+It's a free, interactive online book that actually has a Python interpreter built into the webpage - particularly good for brushing up on syntax.
+For those of you who are farther along, the book Dive Into Python is another frequently recommended classic - your instructors (AR and JK) find it most useful for those switching from a language such as C (or perhaps Matlab) in which you're already fairly proficient. This book gets into fairly advanced usage of the language.
+http://www.diveintopython.net
+
+"Python for data analysis" is a good book that goes into data analysis details:
+http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793/ref=pd_sim_b_2
+"A primer on Scientific programming with Python": Gives also a good overview for non-programmers in the first 2 chapters
+http://hplgit.github.io/scipro-primer/
+
+Python: 
+http://www.greenteapress.com/thinkpython/
+Free, comprehensive, easy to read book on computer science/programming principles using Python. With exercises. This was my intro to computer science textbook and was excellent for learning about programming and languages in general. 
+
+Very practical:
+http://stackoverflow.com/
+http://www.google.com/
+When I don't know how to do something or am getting an error I don't understand, I go to google, which usually sends me over to stackoverflow. Lots of people get stuck in similar places or get similar errors and then post their solutions on Q&A forums. 
+
+
+General: Software Carpentry has a set of online lessons that are somewhat deprecated (they haven't been updated recently - for example, they still use SVN for vesion control), but will provide some basic info on things we won't cover here like make and databases.
+http://software-carpentry.org/v4/index.html
+
+
+http://scipy-lectures.github.io/ is a treasure trove of exercises and tips on using the scientific python eco-system.
+
+http://swcarpentry.github.io/2014-01-27-Stanford/lessons/
+
+-----
+The numpy docstring standard. Read it, learn it, love it:
+https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+-----
+
+http://docs.enthought.com/mayavi/mayavi/
+
+
+Feedback?
+---------------
+ipython notebook is very nice; nice how the environment also worked as the teaching template for us.
+Went quickly; I will be reviewing supplemental documentation later+1+1
+it's a lot of information for two days. maybe it's better to have a series fo shorter workshops over a period of time, if possible.+1
+A lot of material in a small amount of time. This course might benefit from a third day - 1.5-2 days of python, rather than the ~1 day we have here. This would help the pacing of the git lesson too.+1
+very useful info on scipy and matplotlib but maybe too much at once. maybe a 3rd day is needed +1+1
+Nice to have a quick overview of some features even if we didn't have time to go into depth. Will be useful to have later as a quick reference.
+Good to have the iPython notebooks to go over on my own time, since a lot of material was covered this morning - perhaps it would have been better to do a shorter shell tutorial and spend more time on git and Python
+especially liked learning about matplotlib.
+I might prefer sort of a high level description: here is what's there, here is what you might use, and here is where you can find more information. We went into nuts and bolts very quickly, which is very useful for gotchas, but not always as useful if the particular topics are not exactly what one wants to learn. +1+1+1
+With some many contents in Python, I guess it's more important to know how to get help and from where how to get things done.+1
+Really like the interactive notebooks--even when things go quickly, I don't have to go back and forth between slides and code
+The bash and git sessions were very useful for me, the Python sessions less so as I feel the could have focused more on general programming practices as opposed to finding the specific implementation / syntax of a certain function.+2
+
+---------------------------
+You think we're kidding about reproducibility? 
+
+Here's my recently submitted paper: 
+
+https://github.com/vistalab/osmosis
+
+Each one of the figures is an IPython notebook: 
+
+https://github.com/vistalab/osmosis/tree/master/doc/paper_figures
+
+Anyone can clone my repo, download my data, and reproduce every one of the Figures, and all the calculations mentioned in the manuscript
+---------------------------
+
+
+WHAT HAVE WE STILL NOT ANSWERED?
+Modules and submodules: e.g. os.path.isfile: how is this structured within files? Can I have multiple files (all imported by one import) if I'd like? Or is it always one?
+
+Are there other options besides git bash that are perhaps more user-friendly / less technical?
+
+tigher integration with "impure" lab activity
+What is the main advantage of doing data analysis using Python versus another programming language?
+
+=> More answers in this blog-post: http://www.stat.washington.edu/~hoytak/blog/whypython.html
+
+Fitting a function to a plot. Interpolating data sets. => http://mookoom.blogspot.com/
+
+How to implement these principles on a large existing project
+
+GOOD?
+Plentiful examples and explanations were important and helpful.
+Notebook.+1
+In general very good pedagogy; i.e. everything fit together well into the big picture of how to write code with best practices. +1
+Intro to git was thorough and useful for the time spent on it
+the full workflow demo at the end+1+1+1+1+1+1+1+1
+Learning how to recover deleted files with github
+Got an overview on git, good coding practice
+Good overview on shell tools; the last half of day 2 (testing and workflow) was really helpful.+1
+Taught the basic framework to start scientific computing (cmd line, bash, git, import data and how to plot it)
+Completely structured, completely modern, clear presentation+1
+Very nice documentation / website to check things later+1
+General approach of doing things in parallel with instructor
+Interactive exercises during the flow of the lessons
+Final lesson was very good way to tie everything together and give us a framework to actually implement git and reproducibility+1
+lots of hands-on excercises
+Links to additional areas seemed pretty complete!
+learning testing procedures in python was useful and something I hadn't really thought about+1
+Loved the tips and tricks that are not part of regular tools or commands
+
+BAD?
+Notebook: feels really clunkly to navigate.+1 <- I really dislike how it bounces around when output changes, seems clunky in comparison to Mathematic's notebooks. 
+Python intro portions sometimes felt almost a little myopic. It seems like in Python, there are many ways that are kind of sort of similar to do kind of sort of similar things, and it's unclear which would be better. I guess some more general high level guide: how do these packages fit together? +1
+Pacing of git and python sections (too fast, and difficult to follow sometimes when also trying to write working code).+1
+Confusion about the purpose of git bash during the git bash lesson
+following slides for git presentation+1+1
+Lost the terminal commands off screen before I could copy them.+1
+git session went fast for a beginner +1
+Pacing of some of the python sessions was rushed
+Hard to follow instructor when notebook moves up and down so fast.+1+1
+Occasionally found it a bit hard to follow instructor while simultaneously playing with the tools on my own computer. If something went wrong while I was following along, it took awhile to catch up after fixing it.+1+1+1+1+1+1+1 <- felt this way moreso with python than git and cmd
+Need more overviews on the tools: I would have appreciated a survey covering almost all the available capabilities of python/git so even if we don't get to cover them in class I would know to look them up.+1+1
+More info on general Python philosophy would 
+have been good+1+1
+too many exercises in the python section. would rather have more overview info of capabilities
+The basic python commands should come without excersises to save some time for the rest
+I found myself spending a lot of time of google trying to get a view of the "ecosystem..."
+
+DO NEXT TIME?
+More on style and general practices in Python rather than the language itself+1
+Less time on basic programming structures in Python, more on git / bash / workflow+1
+Add another day for more in depth scipy info+1
+When using notebook to teach, have python code already typed in. Explain the logic (gives us time to type in the code while listening to you explain the code), then run the code
+More on workflow and writing shell scripts to link different programs+1+1 for linking using shell scripts.
+more chocolate+1
+less time on basic shell commands, more time on git and python
+Maybe add a little bit on shell scripting to the workflow section for dealing with repetitive filesystem/os tasks.
+Perhaps collect some data from a participant in advance to make it a little more directly relevant. 
+Maybe think about printing out some portions of the lecture (e.g., the webpages). There are only two screens visible, the instructor's and the student's, and these are often showing close to the same thing, and the resolution is not very good on the projector. +1
+how to recover from git disasters
+Have examples of code when teaching python. One second you are distracted and missed some part that you will need later. +1
+Communication with instruments and efficient data collection.
+Perhaps step through actual data analysis steps / archiving with actual data files
+
+WHO SHOULD TAKE THIS BOOTCAMP?
+Everyone+1+1+1+1+1
+    ... who might need to do any kind of large project that requires versioning, collaboration, automation. Anyone writing papers (mostly for git and workflow, in this case).
+Grad students+1+1+1+1+1+1+1+1
+Undergrads+1
+    Don't see undergrads having that much use for this stuff in general, though I do feel more people should know how to use these tools regardless what their status is+1probably people who already have some experience with scientific projects and coding would appreciate this more
+    Undergrads planning to attend grad school (seniors/juniors)+1
+    
+    Undergrads frequently don't know what they want to do, so this could be a good opportunity to expose them to these concepts
+Postdocs+1+1+1+1+1
+Faculty+1+1
+Only those doing...things that require automationcollaboration
+Only those in the field of...
+
+
+WHAT I LEARNED HERE WILL BE...
+Critical to my future
+Useful+1+1+1+1+1+1+1+1+0.5+1+1+1+1+1+1+1
+Eh
+Probably not helpful
+Ask me in a year :-)+1+0.5+1. Probably Very useful.
